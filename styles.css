@@ -136,54 +136,15 @@ body {
   width: 1100px;
 }
 
-.shortenLink {
-  width: 1100px;
-  height: 150px;
-  padding: 36px 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border-radius: 10px;
-  background-image: url(images/bg-shorten-desktop.svg);
-  background-color: #3b3054;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.shortenLink input,
-button {
-  height: fit-content;
-  border-radius: 10px;
-  border: none;
-  font-size: 20px;
-  padding: 24px;
-}
-
-.shortenLink input {
-  width: 80%;
-}
-
-.shortenLink button {
-  background-color: rgb(42, 207, 207);
-  width: 20%;
-}
-
-.shortenLink button a {
-  text-decoration: none;
-  color: white;
-}
-
 .advancedStat {
+  position: relative;
   background-color: rgb(240, 241, 246);
   width: 1440px;
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: -918px;
-  z-index: -1;
   padding-top: 256px;
   padding-bottom: 128px;
+  margin-top: 92px;
 }
 
 .advancedStat .container {
@@ -196,6 +157,45 @@ button {
   gap: 100px;
 }
 
+.advancedStat .container .shortenLink {
+  width: 1100px;
+  height: 150px;
+  padding: 36px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  background-image: url(images/bg-shorten-desktop.svg);
+  background-color: #3b3054;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -70px;
+}
+
+.advancedStat .container .shortenLink input,
+button {
+  height: fit-content;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 24px;
+}
+
+.advancedStat .container .shortenLink input {
+  width: 80%;
+}
+
+.advancedStat .container .shortenLink button {
+  background-color: rgb(42, 207, 207);
+  width: 20%;
+}
+
+.advancedStat .container .shortenLink button a {
+  text-decoration: none;
+  color: white;
+}
 .advancedStat .container .stat-text {
   width: 100%;
   display: flex;
@@ -268,4 +268,40 @@ button {
 
 .advancedStat .container .stat-category .fullyCustomizable {
   margin-top: 100px;
+}
+
+.boostLink {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/bg-boost-desktop.svg);
+  background-color: #3b3054;
+  background-size: cover;
+}
+
+.boostLink .container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 48px;
+}
+
+.boostLink .container .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+.boostLink .container button {
+  background-color: rgb(42, 207, 207);
+  border-radius: 50px;
+  padding: 16px 42px;
+}
+
+.boostLink .container button a {
+  color: white;
+  text-decoration: none;
 }
