@@ -8,19 +8,264 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-/* .containerPage {
-  height: 1440px;
+.containerPage {
   width: 1440px;
   margin: auto;
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .containerContent {
+  width: 1100px;
+  height: 500px;
+  background-color: red;
+} */
+
+.containerPage .header {
+  width: 100%;
+  height: 150px;
   display: flex;
   justify-content: center;
 }
 
-.containerSmall {
-  height: 500px;
+.containerPage .header .navbar {
   width: 1100px;
-  background-color: red;
-} */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerPage .header .navbar a {
+  text-decoration: none;
+}
+
+.containerPage .header .navbar .gray-textLinks {
+  color: rgb(158, 154, 167);
+}
+.containerPage .header .navbar .left {
+  display: flex;
+  gap: 24px;
+  height: max-content;
+  align-items: center;
+}
+
+.containerPage .header .navbar .left .logo {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.containerPage .header .navbar .right {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  gap: 24px;
+}
+
+.containerPage .header .navbar .right button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 50px;
+  background-color: rgb(42, 207, 207);
+}
+
+.containerPage .header .navbar .right button a {
+  color: white;
+}
+
+.intro {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.intro .container {
+  width: 1100px;
+  height: 100%;
+}
+
+.intro .container .content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.intro .container .content .title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.intro .container .content .desc {
+  color: rgb(158, 154, 167);
+  width: 400px;
+}
+
+.intro .container .content button {
+  border: none;
+  padding: 20px 50px;
+  width: fit-content;
+  border-radius: 50px;
+  background-color: rgb(42, 207, 207);
+}
+
+.intro .container .content button a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.intro .container .content-img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: fit-content;
+}
+
+.intro .container .shortenLink {
+  display: flex;
+  width: 1100px;
+}
+
+.shortenLink {
+  width: 1100px;
+  height: 150px;
+  padding: 36px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  background-image: url(images/bg-shorten-desktop.svg);
+  background-color: #3b3054;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shortenLink input,
+button {
+  height: fit-content;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 24px;
+}
+
+.shortenLink input {
+  width: 80%;
+}
+
+.shortenLink button {
+  background-color: rgb(42, 207, 207);
+  width: 20%;
+}
+
+.shortenLink button a {
+  text-decoration: none;
+  color: white;
+}
+
+.advancedStat {
+  background-color: rgb(240, 241, 246);
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -918px;
+  z-index: -1;
+  padding-top: 256px;
+  padding-bottom: 128px;
+}
+
+.advancedStat .container {
+  /* margin-top: 200px; */
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.advancedStat .container .stat-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.advancedStat .container .stat-text .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.advancedStat .container .stat-text .desc {
+  color: #9e9aa7;
+  font-size: 18px;
+  width: 600px;
+}
+
+.advancedStat .container .stat-category {
+  display: flex;
+}
+
+.advancedStat .container .stat-category .card {
+  width: 350px;
+  height: 300px;
+  padding: 80px 35px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.advancedStat .container .stat-category .card .image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  position: absolute;
+  top: -45px;
+  background-color: #3b3054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advancedStat .container .stat-category .card .title p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.advancedStat .container .stat-category .card .subtitle p {
+  color: #9e9aa7;
+  text-align: start;
+}
+
+.advancedStat .container .stat-category .blue-line {
+  background-color: aqua;
+  width: 30px;
+  height: 8px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.advancedStat .container .stat-category .detailedRecords {
+  margin-top: 50px;
+}
+
+.advancedStat .container .stat-category .fullyCustomizable {
+  margin-top: 100px;
+}
