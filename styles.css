@@ -305,3 +305,54 @@ button {
   color: white;
   text-decoration: none;
 }
+
+.footer {
+  width: 1440px;
+  background-color: rgb(35, 33, 39);
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container .left {
+}
+
+.footer .container .left p {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer .container .right {
+  display: flex;
+  gap: 56px;
+}
+
+.footer .container .right .margin {
+  margin-left: 72px;
+}
+
+.footer .container .right .content p {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer .container .right .content ul {
+  list-style-type: none;
+}
+
+.footer .container .right .content ul li {
+  color: #bfbfbf;
+}
+
+.footer .container .right .media {
+  display: flex;
+  gap: 24px;
+}
